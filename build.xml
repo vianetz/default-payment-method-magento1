@@ -87,7 +87,7 @@
     <target name="validate-package">
         <echo msg="Validating generated package.."/>
 
-        <!-- @todo check that build folder is not contained and config.php is encrypted! -->
+        <!-- @todo check that build folder is not contained -->
     </target>
 
     <target name="clean">
