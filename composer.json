@@ -1,0 +1,32 @@
+{
+  "name": "vianetz/default-payment-method-magento1",
+  "description": "The vianetz Default Payment Method Extension for Magento 1.",
+  "type": "magento-module",
+  "keywords": [
+    "vianetz",
+    "magento",
+    "openmage"
+  ],
+  "homepage": "https://www.vianetz.com/",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Christoph Massmann",
+      "email": "cm@vianetz.com",
+      "homepage": "https://www.vianetz.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "extra": {
+    "map": [
+      [ "src/app/code/community/Vianetz/*", "app/code/community/Vianetz/" ],
+      [ "src/app/etc/modules/*", "app/etc/modules/" ]
+    ]
+  }
+}
