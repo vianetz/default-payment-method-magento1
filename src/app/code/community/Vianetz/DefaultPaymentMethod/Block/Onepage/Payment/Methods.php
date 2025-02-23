@@ -2,9 +2,6 @@
 declare(strict_types=1);
 
 /**
- * DefaultPaymentMethod Payment Methods Block Rewrite
- *
- * @category    Vianetz
  * @package     Vianetz\DefaultPaymentMethod
  * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU GENERAL PUBLIC LICENSE
  */
@@ -16,7 +13,7 @@ final class Vianetz_DefaultPaymentMethod_Block_Onepage_Payment_Methods extends M
     public function getSelectedMethodCode(): false|string
     {
         $method = parent::getSelectedMethodCode();
-        if (empty($method) === true) {
+        if (empty($method)) {
             $method = Mage::getStoreConfig('vianetz_defaultpaymentmethod/general/default_payment_method');
         }
         
