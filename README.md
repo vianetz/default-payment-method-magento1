@@ -1,4 +1,4 @@
-Vianetz Default Payment Method Extension for Magento
+Default Payment Method Extension for Magento 1
 ====================================================
 
 Facts
@@ -13,12 +13,12 @@ that is selected by default in the checkout if the customer hasn't chosen one ye
 
 Requirements
 ------------
-- PHP >= 7.4.0
+- PHP >= 8.1
 - Magento >= 1.9.3.0 or OpenMage 19.x/20.x
 
 Installation Instructions
 -------------------------
-For installation notes please see also [our FAQ](https://www.vianetz.com/en/faq/how-to-install-the-magento-extension.html).
+For installation notes please see also [my documentation](https://www.vianetz.com/en/install-magento-extension/).
 
 1. Do a backup of your Magento installation for safety reasons.
 2. Disable Magento compilation feature (if activated): System->Tools->Compiler
