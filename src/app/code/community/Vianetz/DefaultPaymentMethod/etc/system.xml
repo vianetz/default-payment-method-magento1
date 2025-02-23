@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <config>
+    <tabs>
+        <vianetz translate="label">
+            <label>vianetz Extensions</label>
+            <sort_order>200</sort_order>
+        </vianetz>
+    </tabs>
     <sections>
         <vianetz_defaultpaymentmethod translate="label" module="vianetz_defaultpaymentmethod">
             <label>Default Payment Method</label>
@@ -26,7 +32,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <comment><![CDATA[
-                        <b>DefaultPaymentMethod Version 1.0.0</b><br />by <a href="http://www.vianetz.com" target="_blank">vianetz | Magento Enterprise Web Development</a>
+                        <b>Default Payment Method</b><br />by <a href="https://www.vianetz.com" target="_blank" rel="noopener noreferer">vianetz | Dipl.-Ing. Freelancer for Magento</a>
                         ]]></comment>
                         </note>
 
