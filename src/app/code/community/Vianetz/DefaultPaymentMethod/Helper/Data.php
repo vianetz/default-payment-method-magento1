@@ -2,9 +2,6 @@
 declare(strict_types=1);
 
 /**
- * DefaultPaymentMethod Helper
- *
- * @category    Vianetz
  * @package     Vianetz\DefaultPaymentMethod
  * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU GENERAL PUBLIC LICENSE
  */
