@@ -1,0 +1,6 @@
+.idea
+*.bak
+*.swp
+composer.lock
+vendor/
+env

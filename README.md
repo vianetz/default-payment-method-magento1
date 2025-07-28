@@ -1,66 +1,66 @@
-Default Payment Method Extension for Magento 1
-====================================================
+# Default Payment Method Extension for Magento 1
 
-Facts
------
-- version: 2.0.0
-- extension key: `Vianetz_DefaultPaymentMethod`
-
-Description
------------
-This module for the Magento 1 online shop software adds the possibility to configure a payment method
+This Extension for Magento 1 adds the possibility to configure a payment method
 that is selected by default in the checkout if the customer hasn't chosen one yet.
 
-Requirements
-------------
-- PHP >= 8.1
-- Magento >= 1.9.3.0 or OpenMage 19.x/20.x
+---
 
-Installation Instructions
--------------------------
-For installation notes please see also [my documentation](https://www.vianetz.com/en/install-magento-extension/).
+## Overview
+
+- **Version:** 2.0.0
+- **Extension Key:** `Vianetz_DefaultPaymentMethod`
+
+## Requirements
+
+- **PHP:** >= 8.1
+- **Magento:** >= 1.9.3.0 or OpenMage 19.x/20.x
+
+## Installation Instructions
+
+For the most up-to-date installation notes, please also see [the documentation](https://www.vianetz.com/en/install-magento-extension/).
 
 1. Do a backup of your Magento installation for safety reasons.
-2. Disable Magento compilation feature (if activated): System->Tools->Compiler
-3. Unzip the setup package and copy the contents of the src/ folder into the Magento root folder. (The folder structure
+2. Disable Magento compilation feature (if activated): _System > Tools > Compiler_
+3. Unzip the setup package and copy the contents of the `src/` folder into the Magento root folder. (The folder structure
    is the same as in your Magento installation. No files will be overwritten.)
    Please assure that the files are uploaded with the same file user permissions as the Magento installation!
 4. Clear the Magento cache (and related caches like APC if available)
 5. Logout from the admin panel and then login again
-6. Enable the Magento compilation feature (if it was activated before): System->Tools->Compiler
+6. Enable the Magento compilation feature (if it was activated before): _System > Tools > Compiler_
 
-As an alternative you can install the module via modman.
-Please find more information about that installation method at [github.com/colinmollenhour/modman](https://github.com/colinmollenhour/modman)
-(Thanks @colinmollenhour)
+As an alternative, I recommend installing the Extension via composer:
+```
+composer require vianetz/default-payment-method-magento1
+```
 
-We also offer paid installation services. If you are interested please contact me at [support@vianetz.com](mailto:support@vianetz.com).
+We also offer paid installation services, please [contact me](https://www.vianetz.com/en/contacts).
 
-Uninstallation
---------------
+## Uninstallation
+
 1. Remove the folder `app/code/community/Vianetz/DefaultPaymentMethod`
 2. Remove the file `app/etc/modules/Vianetz_DefaultPaymentMethod.xml`
 
-Frequently Asked Questions
---------------------------
-Please find the Frequently Asked Questions on our website [vianetz.com/en/faq](https://www.vianetz.com/en/faq).
+## Frequently Asked Questions
 
-Support
--------
-If you have any issues or suggestions with this extension, please do not hesitate to
-contact me at [vianetz.com/en/contacts](https://www.vianetz.com/en/contacts) or [support@vianetz.com](mailto:support@vianetz.com).
+Please find the Frequently Asked Questions on [my website](https://www.vianetz.com/en/faq).
 
-Developer
----------
-Christoph Massmann
-[www.vianetz.com](https://www.vianetz.com)
-[@vianetz](https://twitter.com/vianetz)
+## Support
 
-Licence
--------
-[GNU GENERAL PUBLIC LICENSE](http://www.gnu.org/licenses/gpl-2.0.txt)
+- Open an issue in the [GitHub Issues](https://github.com/vianetz/default-payment-method-magento1/issues) tracker
+- For commercial support, [contact me](https://www.vianetz.com/en/contacts)
 
-Copyright
----------
+## Developer
+
+Christoph Massmann  
+[www.vianetz.com](https://www.vianetz.com)  
+[@vianetz](https://twitter.com/vianetz)  
+
+## Licence
+
+Distributed under the GPL License. See [LICENSE](LICENSE.txt) for more information.
+
+## Copyright
+
 (c) since 2008 vianetz
 
-This Magento Extension uses Semantic Versioning - please find more information at [semver.org](http://semver.org).
+This Magento Extension uses Semantic Versioning — please find more information at [semver.org](http://semver.org).
