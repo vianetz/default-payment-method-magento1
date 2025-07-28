@@ -55,12 +55,9 @@ Christoph Massmann
 [www.vianetz.com](https://www.vianetz.com)  
 [@vianetz](https://twitter.com/vianetz)  
 
-## Licence
+## License
 
-Distributed under the GPL License. See [LICENSE](LICENSE.txt) for more information.
-
-## Copyright
-
-(c) since 2008 vianetz
+Distributed under the [OSL 3.0 License](LICENSE.txt).  
+Copyright (c) 2016 - 2025 vianetz - Dipl.-Ing. C. Massmann (https://www.vianetz.com)
 
 This Magento Extension uses Semantic Versioning — please find more information at [semver.org](http://semver.org).
