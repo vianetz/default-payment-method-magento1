@@ -1,6 +1,6 @@
 {
   "name": "vianetz/default-payment-method-magento1",
-  "description": "Set Default Payment Method in Magento 1",
+  "description": "Configure Default Payment Method in Magento 1",
   "type": "magento-module",
   "keywords": [
     "vianetz",
@@ -8,7 +8,7 @@
     "openmage"
   ],
   "homepage": "https://www.vianetz.com/",
-  "license": "GPL-2.0-or-later",
+  "license": "OSL-3.0",
   "authors": [
     {
       "name": "Christoph Massmann",
