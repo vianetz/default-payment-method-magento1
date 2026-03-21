@@ -5,15 +5,16 @@
   "keywords": [
     "vianetz",
     "magento",
-    "openmage"
+    "openmage",
+    "payment",
+    "default"
   ],
-  "homepage": "https://www.vianetz.com/",
+  "homepage": "https://github.com/vianetz/default-payment-method-magento1",
   "license": "OSL-3.0",
   "authors": [
     {
       "name": "Christoph Massmann",
       "email": "cm@vianetz.com",
-      "homepage": "https://www.vianetz.com",
       "role": "Developer"
     }
   ],
@@ -22,11 +23,5 @@
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"
-  },
-  "extra": {
-    "map": [
-      [ "src/app/code/community/Vianetz/*", "app/code/community/Vianetz/" ],
-      [ "src/app/etc/modules/*", "app/etc/modules/" ]
-    ]
   }
 }

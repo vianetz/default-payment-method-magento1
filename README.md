@@ -58,6 +58,6 @@ Christoph Massmann
 ## License
 
 Distributed under the [OSL 3.0 License](LICENSE.txt).  
-Copyright (c) 2016 - 2025 vianetz - Dipl.-Ing. C. Massmann (https://www.vianetz.com)
+Copyright (c) 2016-2026 vianetz - Dipl.-Ing. C. Massmann (https://www.vianetz.com)
 
 This Magento Extension uses Semantic Versioning — please find more information at [semver.org](http://semver.org).
