@@ -23,7 +23,7 @@ final class Vianetz_DefaultPaymentMethod_Block_Onepage_Payment_Methods extends M
             return $this;
         }
 
-        $formBlock->setMethodLabelAfterHtml($this->helper('vianetz_defaultpaymentmethod')->getLabelText());
+        $formBlock->setMethodLabelAfterHtml($this->escapeHtml($this->helper('vianetz_defaultpaymentmethod')->getLabelText()));
 
         return $this;
     }
@@ -39,6 +39,7 @@ final class Vianetz_DefaultPaymentMethod_Block_Onepage_Payment_Methods extends M
         return $method ?? false;
     }
 
+    /** @return Mage_Payment_Model_Method_Abstract[] */
     private function getActiveMethods(): array
     {
         return array_filter($this->getMethods(), static fn ($method) => ! $method->getData('disabled'));

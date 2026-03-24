@@ -1,18 +1,17 @@
 # Default Payment Method Extension for Magento 1
 
-This Extension for Magento 1 adds the possibility to configure a payment method
+This tiny Extension for Magento 1 adds the possibility to configure a payment method
 that is selected by default in the checkout if the customer hasn't chosen one yet.
 
 ---
 
 ## Overview
 
-- **Version:** 2.0.0
 - **Extension Key:** `Vianetz_DefaultPaymentMethod`
 
 ## Requirements
 
-- **PHP:** >= 8.1
+- **PHP:** >= 8.4
 - **Magento:** >= 1.9.3.0 or OpenMage 19.x/20.x
 
 ## Installation Instructions
