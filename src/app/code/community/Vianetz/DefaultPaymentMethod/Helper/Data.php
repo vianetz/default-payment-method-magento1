@@ -10,6 +10,6 @@ final class Vianetz_DefaultPaymentMethod_Helper_Data extends Mage_Core_Helper_Ab
 {
     public function getDefaultPaymentMethodCode(): string
     {
-        return Mage::getStoreConfig('vianetz_defaultpaymentmethod/general/default_payment_method');
+        return (string)Mage::getStoreConfig('payment/default_payment/method');
     }
 }
