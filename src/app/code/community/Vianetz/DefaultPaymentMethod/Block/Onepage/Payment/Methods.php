@@ -9,6 +9,26 @@ declare(strict_types=1);
 final class Vianetz_DefaultPaymentMethod_Block_Onepage_Payment_Methods extends Mage_Checkout_Block_Onepage_Payment_Methods
 {
     #[Override]
+    protected function _prepareLayout(): self
+    {
+        parent::_prepareLayout();
+
+        if (count($this->getActiveMethods()) <= 1) {
+            return $this;
+        }
+
+        $defaultCode = $this->helper('vianetz_defaultpaymentmethod')->getDefaultPaymentMethodCode();
+        $formBlock = $this->getChild('payment.method.' . $defaultCode);
+        if ($formBlock === false) {
+            return $this;
+        }
+
+        $formBlock->setMethodLabelAfterHtml($this->helper('vianetz_defaultpaymentmethod')->getLabelText());
+
+        return $this;
+    }
+
+    #[Override]
     public function getSelectedMethodCode(): false|string
     {
         $method = parent::getSelectedMethodCode();
@@ -17,5 +37,10 @@ final class Vianetz_DefaultPaymentMethod_Block_Onepage_Payment_Methods extends M
         }
 
         return $method ?? false;
+    }
+
+    private function getActiveMethods(): array
+    {
+        return array_filter($this->getMethods(), static fn ($method) => ! $method->getData('disabled'));
     }
 }

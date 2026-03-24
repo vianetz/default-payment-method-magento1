@@ -12,4 +12,9 @@ final class Vianetz_DefaultPaymentMethod_Helper_Data extends Mage_Core_Helper_Ab
     {
         return (string)Mage::getStoreConfig('payment/default_payment/method');
     }
+
+    public function getLabelText(): string
+    {
+        return (string)Mage::getStoreConfig('payment/default_payment/label');
+    }
 }

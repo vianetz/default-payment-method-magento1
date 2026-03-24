@@ -1,12 +1,5 @@
 <?xml version="1.0"?>
 <config>
-    <tabs>
-        <vianetz translate="label">
-            <label>vianetz Extensions</label>
-            <sort_order>200</sort_order>
-        </vianetz>
-    </tabs>
-
     <sections>
         <payment>
             <groups>
@@ -33,12 +26,21 @@
                             <label>Method</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_payment_allowedmethods</source_model>
-                            <sort_order>4</sort_order>
+                            <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                             <can_be_empty>1</can_be_empty>
                         </method>
+                        <label translate="label">
+                            <label>Label Text</label>
+                            <comment>Optional label text to show after the default payment method in the list (if there are multiple methods).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </label>
                     </fields>
                 </default_payment>
             </groups>
